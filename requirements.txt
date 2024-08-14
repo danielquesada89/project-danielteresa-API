@@ -4,3 +4,4 @@ streamlit
 ultralytics
 torch
 opencv-python-headless
+scikit-learn
