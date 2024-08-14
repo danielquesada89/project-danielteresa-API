@@ -553,7 +553,7 @@ with col2:
 ################################################
 
 # we import model
-with open('Models/cost_model.pkl', 'rb') as file:
+with open('./Models/cost_model.pkl', 'rb') as file:
     cost_model = pickle.load(file)
 
 # Display the selected workshop
