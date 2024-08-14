@@ -228,7 +228,7 @@ col1, col2= st.columns([1.5, 3])
 
 with col1:
     if st.button("Home"):
-        st.switch_page(os.path.join(os.getcwd(), "API/Homepage.py"))
+        st.switch_page(os.path.join(os.getcwd(), "Homepage.py"))
 
 
 with col2:
@@ -244,7 +244,7 @@ with col1:
     uploaded_file = st.file_uploader(" ", type=["jpg", "jpeg", "png"])
 
 
-save_directory = "API/uploads"
+save_directory = "uploads"
 if os.path.exists(save_directory):
         shutil.rmtree(save_directory)
 

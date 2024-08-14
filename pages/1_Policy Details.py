@@ -217,4 +217,4 @@ col1, col2, col3 = st.columns([0.5, 1,2])
 
 with col2:
     if st.button("Home", key="home"):
-        st.switch_page(os.path.join(os.getcwd(), "API/Homepage.py"))
+        st.switch_page(os.path.join(os.getcwd(), "Homepage.py"))

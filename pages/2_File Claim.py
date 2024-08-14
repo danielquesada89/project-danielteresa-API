@@ -160,7 +160,7 @@ col1, col2= st.columns([1.5, 4])
 
 with col1:
     if st.button(f"Home", key="home"):
-        st.switch_page(os.path.join(os.getcwd(), "API/Homepage.py"))
+        st.switch_page(os.path.join(os.getcwd(), "Homepage.py"))
 
 with col2:
     if st.button("Open a New Claim", key="open_claim"):

@@ -545,7 +545,7 @@ with col1:
 
 with col2:
     if st.button("Home", key="home"):
-        st.switch_page(os.path.join(os.getcwd(), "API/Homepage.py"))
+        st.switch_page(os.path.join(os.getcwd(), "Homepage.py"))
 
 
 ################################################
