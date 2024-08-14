@@ -217,13 +217,13 @@ col1, col2, col3 = st.columns([1, 1,4])
 
 with col1:
     if st.button("Policy Details"):
-        st.switch_page(os.path.join(os.getcwd(), "API/pages/1_Policy Details.py"))
+        st.switch_page(os.path.join(os.getcwd(), "pages/1_Policy Details.py"))
 
 
 with col2:
     if st.button("File Claim"):
-        st.switch_page(os.path.join(os.getcwd(), "API/pages/2_File Claim.py"))
+        st.switch_page(os.path.join(os.getcwd(), "pages/2_File Claim.py"))
 
 with col3:
     if st.button("Manage Claim"):
-        st.switch_page(os.path.join(os.getcwd(), "API/pages/2_File Claim.py"))
+        st.switch_page(os.path.join(os.getcwd(), "pages/2_File Claim.py"))
