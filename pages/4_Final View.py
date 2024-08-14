@@ -10,7 +10,7 @@ import pickle
 ################################################
 
 #  charge models and obtain the prediciton of the photo
-path_upload = 'API/uploads'
+path_upload = 'uploads'
 picture_name=os.listdir(path_upload)[0]
 full_path= os.path.join(path_upload,picture_name)
 # we import model
@@ -553,7 +553,7 @@ with col2:
 ################################################
 
 # we import model
-with open('./Models/cost_model.pkl', 'rb') as file:
+with open('Models/cost_model.pkl', 'rb') as file:
     cost_model = pickle.load(file)
 
 # Display the selected workshop
