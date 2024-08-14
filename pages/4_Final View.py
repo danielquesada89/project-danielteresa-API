@@ -2,7 +2,6 @@ import streamlit as st
 import base64
 import os
 from ultralytics import YOLO
-import joblib
 import pandas as pd
 import pickle
 
