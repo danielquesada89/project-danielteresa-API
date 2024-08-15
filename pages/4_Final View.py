@@ -624,10 +624,12 @@ if buttom_workshop != "Select among available workshops":
 
     # Generate the complete_case DataFrame
     complete_case = generate_complete_case(case, damage_types)
+    complete_case = complete_case.astype(float)
 
     # dataframe with the predictions
+    predictions = cost_model.predict(complete_case.values).round(0)
     cost_predictions= pd.DataFrame({'Damages': damage_types,
-    'Cost Estimates': cost_model.predict(complete_case).round(0)
+    'Cost Estimates': predictions
     })
 
     # Calculate the total cost as the sum of all 'Cost Estimates'
